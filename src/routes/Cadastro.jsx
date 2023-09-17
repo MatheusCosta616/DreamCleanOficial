@@ -28,7 +28,7 @@ export default function Cadastro() {
         <input type="date" id="dob" name="dob" /><br /><br />
         <label htmlFor="gender">Gênero:</label><br />
         <select id="gender" name="gender">
-          <option value="select">Selecione</option>
+          <option value="">Selecione</option>
           <option value="male">Masculino</option>
           <option value="female">Feminino</option>
           <option value="other">Outro</option>
