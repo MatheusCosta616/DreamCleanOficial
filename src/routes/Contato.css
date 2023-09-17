@@ -22,10 +22,6 @@
   align-items: center;
 }
 
-#contato-form {
-
-}
-
 #titulo-contato {
   color: var(--cor-titulo);
   text-align: center;
@@ -42,4 +38,53 @@
 #btnEnviar {
   margin-left: 20%;
   margin-top: 10%;
+}
+
+@media screen and (max-width:768px) {
+  .container-contato {
+    margin-top: 22%;
+    height: 45vh;
+    width: 55vw;
+    margin-left: 25%;
+  }
+
+  #nome, #email, #mensagem{
+    width: 35vw;
+  }
+
+  #btnEnviar{
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .container-contato{
+    margin-top: 90%;
+    width: 100vw;
+    height: 50vh;
+    margin-left: 20%;
+    margin-bottom: -120%;
+  }
+
+  #nome, #email, #mensagem{
+    width: 65vw;
+  }
+  #btnEnviar{
+    width: 30vw;
+    margin-left: 22%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .container-contato{
+    width: 120vw;
+    margin-left: 15%;
+    margin-bottom: -180%;
+  }
+  #nome, #email, #mensagem{
+    width: 80vw;
+  }
+  #btnEnviar{
+    width: 40vw;
+  }
 }
