@@ -10,7 +10,7 @@ export default function Erro404() {
     <Cabecalho/>
     </div>
     <center><div>
-        <h1 id="Error404"></h1>
+        <h1 id="Error404">Erro404 NÃO FOI POSSÍVEL ENCONTRAR SUA PÁGINA</h1>
     </div></center>
     <div className="rodape404">
     <Rodape/>
