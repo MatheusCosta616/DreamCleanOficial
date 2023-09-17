@@ -1,0 +1,123 @@
+:root {
+    --cor-background: #256670;
+    --cor-texto: #FFF;
+    --cor-titulo: #ADE28A;
+    --espacamento-topo: 1%;
+    --espacamento-lateral: 5%;
+    --espacamento-bottom: 10%;
+}
+
+.lixoPag {
+    margin-top: var(--espacamento-topo);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: var(--espacamento-bottom);
+}
+
+.containerLixo {
+    grid-row: 1;
+    grid-column: 1/2;
+    width: 150%;
+    height: 70%;
+    margin-left: 20%;
+    background-color: var(--cor-background);
+    border-radius: 20px;
+    margin-top: 50%;
+}
+
+.dDiv {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: var(--espacamento-lateral);
+    color: var(--cor-titulo);
+}
+
+.txtPadr {
+    margin-top: -10px;
+    display: inline-block;
+    color: var(--cor-texto);
+    font-size: 22px;
+}
+
+.fundoImg {
+    grid-column: 2/2;
+    grid-row: 1;
+    margin-left: 90%;
+    margin-top: 50%;
+    width: 80%;
+    height: 70%;
+    background-color: var(--cor-background);
+    border-radius: 10%;
+}
+
+.bueiroImg {
+    border-radius: 5%;
+    margin-top: 4%;
+    margin-left: var(--espacamento-lateral);
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .lixoPag {
+        margin-bottom: var(--espacamento-bottom);
+    }
+    .containerLixo {
+        margin-top: 50%;
+        margin-left: 55%;
+        height: 80%;
+        width: 190%;
+    }
+
+    .fundoImg {
+        grid-row: 2;
+        grid-column: 1/1;
+        margin-top: 50%;
+        margin-left: 55%;
+        width: 190%;
+        height: 85%;
+    }
+    .bueiroImg {
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .lixoPag {
+        margin-bottom: -120%;
+    }
+
+    .containerLixo {
+        margin-top: 150%;
+        margin-left: 40%;
+        width: 250%;
+        height: 60%;
+    }
+
+    .fundoImg {
+        width: 250%;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .containerLixo {
+        margin-left: 20%;
+        height: 60%;
+    }
+    .fundoImg {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .containerLixo {
+        height: 70%;
+        width: 220%;
+        margin-left: 22%;
+    }
+    .fundoImg {
+        width: 220%;
+        margin-left: 22%;
+    }
+}

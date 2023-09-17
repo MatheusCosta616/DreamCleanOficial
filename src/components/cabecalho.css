@@ -1,0 +1,141 @@
+/* Definindo variáveis CSS */
+:root {
+  --menu-background-color: #1E425E;
+  --menu-logo-width: 110px;
+  --menu-logo-position: left 40px center;
+  --menu-item-margin: 20px;
+  --menu-link-color: #FFF;
+  --menu-link-hover-color: #FFF;
+  --menu-cliAq-color: #EDFA8B;
+  --menu-link-font-weight: bold;
+}
+
+.menu-btn{
+  display: none;
+}
+
+.bar{
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 3px 0;
+}
+
+/* Estilizando o menu */
+.menu {
+  background-color: var(--menu-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-size: var(--menu-logo-width);
+  background-position: var(--menu-logo-position);
+}
+
+.itens {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilizando a lista não ordenada (ul) */
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilizando os itens da lista (li) */
+li {
+  margin-right: var(--menu-item-margin);
+  margin-left: var(--menu-item-margin);
+}
+
+/* Estilizando os links (a) */
+a {
+  color: var(--menu-link-color);
+  text-decoration: none;
+}
+
+/* Estilizando o elemento com id 'cliAq' */
+#cliAq {
+  color: var(--menu-cliAq-color);
+  font-weight: var(--menu-link-font-weight);
+}
+
+/* Estilizando os links quando o mouse passa por cima (hover) */
+a:hover {
+  color: var(--menu-link-hover-color);
+}
+
+/* Estilizando os links visitados */
+a:visited {
+  color: var(--menu-link-color);
+}
+
+@media screen and (max-width:1024px){
+  .menu{
+    font-size: 0.95em;
+  }
+  ul {
+    text-align: center;
+    margin-left: 15%;  
+  }
+}
+
+/*Telas para tablets e smartphones habilitam menu "hambúrguer" no lugar do padrão*/
+@media screen and (max-width: 768px){
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin-left: 84%;
+      align-items: center;
+      margin-top: 25px
+    }
+    .itens {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      align-items: right;
+      justify-content: right;
+      top: 50px;
+      right: 0;
+      width: 30%;
+      margin-top: 38px;
+      gap: 10px;
+      height: auto;
+      background-color: var(--menu-background-color);
+      z-index: 1;
+      border: 2px solid black;
+      border-top: none;
+      border-right: none;
+    }
+    .itens.active{
+      display: flex;
+    }
+}
+
+@media screen and (max-width: 500px){
+  .menu{
+    width: 117%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .menu{
+    width: 118%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .menu{
+    width: 122%;
+  }
+}

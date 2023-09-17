@@ -1,0 +1,161 @@
+:root {
+    --fundo-form: #256670; /* Cor de fundo: Verde */
+    --cor-texto: #FFFFFF; /* Cor do texto: Branco */
+    --cor-borda: #145A32; /* Cor da borda: Verde escuro */
+    --cor-botao-fundo: #EDFA8B; /* Cor de fundo do botão: Amarelo */
+    --cor-botao-texto: #256670; /* Cor do texto do botão: Azul */
+}
+
+#CadastroTitulo{
+    margin-top: -4vh;
+    font-size: 50px;
+    color: #ADE28A;
+}
+
+.cadastro{
+    margin-top: 0vh;
+    margin-left: 0vw;
+    padding:2px;
+}
+
+#jaTem{
+    margin-top: 40vh;
+    color: #FFF;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 24px;
+    margin-bottom: -0px;
+}
+
+#links{
+    color: #ADE28A;
+}
+
+.formCadast {
+    text-align: justify; /* Justifica o texto dentro da caixa */
+    display: flex; /* Usamos flex para centralizar vertical e horizontalmente */
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin-top: 15vh;
+    margin-left: 27vw;
+    background-color: var(--fundo-form); /* Usamos a cor de fundo definida */
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    height: 130vh;
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+    width: 20vw;
+}
+
+input[type="date"],
+#gender {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+    width: 20vw;
+    height: 4vh;
+}
+
+option{
+    color:black;
+}
+
+/* Estilize os campos de entrada quando focados */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+/* Estilize os campos de entrada quando hover */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Estilize o botão de enviar */
+input[type="submit"] {
+    height: 8vh;
+    width: 13vw;
+    margin-left: 0vw;
+    margin-bottom: -36vh;
+    background-color: var(--cor-botao-fundo); /* Usamos a cor de fundo do botão definida */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--cor-botao-texto); /* Usamos a cor do texto do botão definida */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 27px;
+}
+
+/* Animação no hover do botão de enviar */
+input[type="submit"]:hover {
+    background-color: var(--cor-texto); /* Altera a cor de fundo no hover */
+    color: var(--cor-botao-fundo); /* Altera a cor do texto no hover */
+}
+
+label{
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .formCadast{
+        margin-left: 31%;
+    }
+    #cadastrar{
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formCadast{
+        width: 50vw;
+        margin-left: 24%;
+    }
+    #username, #email, #password, #confirm-password, #dob, #gender{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .formCadast{
+        width: 90vw;
+        margin-left: 20%;
+    }
+    #username, #email, #password, #confirm-password, #dob, #gender{
+        width: 45vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formCadast{
+        width: 103vw;
+    }
+    #username, #email, #password, #confirm-password, #dob, #gender{
+        width: 52vw;
+    }
+    #jaTem{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+}

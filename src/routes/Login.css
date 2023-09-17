@@ -1,0 +1,157 @@
+/* Defina sua paleta de cores personalizada */
+:root {
+    --fundo-form: #256670; /* Cor de fundo: Verde */
+    --cor-texto: #FFFFFF; /* Cor do texto: Branco */
+    --cor-borda: #145A32; /* Cor da borda: Verde escuro */
+    --cor-botao-fundo: #EDFA8B; /* Cor de fundo do botão: Amarelo */
+    --cor-botao-texto: #256670; /* Cor do texto do botão: Azul */
+}
+
+/* Estilize a caixa do formulário */
+.formLogin {
+    text-align: justify; /* Justifica o texto dentro da caixa */
+    display: flex; /* Usamos flex para centralizar vertical e horizontalmente */
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin-top: 20vh;
+    margin-left: 30vw;
+    margin-bottom: 10vh;
+    background-color: var(--fundo-form); /* Usamos a cor de fundo definida */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    height: 60vh;
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+}
+
+/* Estilize o título do login */
+#LoginTitulo {
+    margin-top: -10vh;
+    margin-left: 0vw;
+    font-size: 50px;
+    color: #ADE28A;
+}
+
+.formCom{
+    margin-top: 30px;
+}
+
+/* Estilize os rótulos */
+label {
+    margin-top: 10vh;
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+    font-size: 25px;
+    margin-left: 0vw;
+}
+
+/* Estilize os campos de entrada */
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--cor-texto); /* Usamos a cor de texto definida */
+    width: 20vw;
+}
+
+/* Estilize o botão de enviar */
+input[type="submit"] {
+    height: 5vh;
+    width: 8vw;
+    margin-left: 6vw;
+    background-color: var(--cor-botao-fundo); /* Usamos a cor de fundo do botão definida */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--cor-botao-texto); /* Usamos a cor do texto do botão definida */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação no hover do botão de enviar */
+input[type="submit"]:hover {
+    background-color: var(--cor-texto); /* Altera a cor de fundo no hover */
+    color: var(--cor-botao-fundo); /* Altera a cor do texto no hover */
+}
+
+/* Estilize os campos de entrada quando focados */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+/* Estilize os campos de entrada quando hover */
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilize o parágrafo */
+#pForm {
+    font-size: 20px;
+    margin-left: 0vw;
+    margin-top: 4vh;
+    color: var(--cor-texto);
+}
+
+#entrar{
+    margin-left: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    #senha, #usuario {
+        width: 23vh;
+    }
+
+    #entrar {
+        width: 120px;
+        margin-left: 25%;
+    }
+
+    .formLogin{
+        width: 55vw;
+        margin: 30% 0 -10% 22%;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #senha, #usuario {
+        font-size: 20px;
+        width: 30vh;
+    }
+    #usuario{
+        margin-bottom: 10px;
+    }
+    #senha{
+        margin-top: 10px;
+    }
+    .formLogin{
+        width: 85vw;
+        margin: 70% 0 -150% 22%;
+        height: 65vh;
+    }
+
+    #entrar{
+        margin-left: 25%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .formLogin{
+        margin: 90% 0 -190% 22%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formLogin{
+        width: 100vw;
+        margin: 100% 0 -220% 22%;
+    }
+}

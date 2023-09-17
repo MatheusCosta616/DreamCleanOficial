@@ -1,0 +1,13 @@
+:root {
+    --espacamento-vertical: 40vh;
+    --espacamento-horizontal: 20px;
+    --cor-texto: #000; /* Cor de texto padrão, altere conforme necessário */
+}
+
+#Error404 {
+    margin-top: var(--espacamento-vertical);
+    margin-bottom: var(--espacamento-vertical);
+    text-align: justify;
+    color: var(--cor-texto);
+    padding: var(--espacamento-horizontal);
+}

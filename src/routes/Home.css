@@ -1,0 +1,65 @@
+/* Definindo variáveis CSS */
+:root {
+  --background-color: #ADE28A;
+  --font-family: sans-serif, Roboto;
+  --grid-gap: 10px;
+}
+
+/* Reset de estilos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilizando o corpo (body) */
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  padding: 10px;
+  margin: 0;
+}
+
+/* Estilizando o contêiner da grade (grid-container) */
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Agora são apenas 2 colunas */
+  grid-template-rows: auto auto; /* 2 linhas */
+  grid-gap: var(--grid-gap);
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: -20vh;
+}
+
+/* Estilizando o segundo item da grade (grid-item2) */
+#grid-item2 {
+  border: none;
+  margin-top: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  #grid-item2{
+    margin-bottom: 1500px;
+    margin-top: -600px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #grid-item2{
+    margin-top: -900px;
+    margin-bottom: 1700px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #grid-item2{
+    margin-top: -1700px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #grid-item2{
+    margin-top: -1500px;
+    margin-right: -100px;
+  }
+}

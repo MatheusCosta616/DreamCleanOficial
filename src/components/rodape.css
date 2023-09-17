@@ -1,0 +1,28 @@
+/* Definindo variáveis CSS */
+:root {
+  --cor-de-fundo: #333;  /* Cor de fundo geral */
+  --cor-texto: #fff;      /* Cor do texto geral */
+  --tamanho-fonte: 13px;  /* Tamanho da fonte geral */
+  --espacamento-texto: 5px; /* Espaçamento entre parágrafos */
+}
+
+/* Estilizando o rodapé */
+.rodape {
+  display: flex;
+  background-color: var(--cor-de-fundo); /* Utilizando a variável de cor de fundo */
+  color: var(--cor-texto);               /* Utilizando a variável de cor de texto */
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+  position: static;
+  left: 0;
+  margin-top: 150px;
+}
+
+/* Estilizando parágrafos dentro do rodapé */
+.rodape p {
+  font-size: var(--tamanho-fonte); /* Utilizando a variável de tamanho de fonte */
+  color: var(--cor-texto);         /* Utilizando a variável de cor de texto */
+  margin: var(--espacamento-texto) 0; /* Utilizando a variável de espaçamento entre parágrafos e 0 na margem vertical para evitar espaçamento extra */
+}
