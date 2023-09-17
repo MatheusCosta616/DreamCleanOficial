@@ -254,7 +254,7 @@
 	.maisQmSomos {
 		width: 400%;
 		text-align: center;
-		height: 100%;
+		height: 110%;
 		grid-row: 2;
 		grid-column: 1/1;		
 	}
@@ -266,7 +266,7 @@
 	}
 	.divisaoInfo{
 		top: 44%;
-		width: 133%;
+		width: 137%;
 	}
 	.divisaoInfo p{
 		margin-left: 20px;
@@ -276,16 +276,19 @@
 	.continuacao{
 		grid-column: 1/1;
 		grid-row: 3;
-		top: 220%;
-		height: 80%;
+		top: 210%;
+		height: 60%;
 		width: 400%;
 		left: 10%;
+	}
+	.continuacao p {
+		margin-top: 10%;
 	}
 
 	.continuacao2{
 		grid-column: 1/1;
 		grid-row: 4;
-		top: 225%;
+		top: 200%;
 		height: 95%;
 		width: 400%;
 	}
@@ -322,9 +325,15 @@
 		margin-top: -170%;
 	}
 
-	.continuacao2{
-		top: 210%;
+	.continuacao{
+		top: 220%;
+		height: 67%;
 	}
+	.continuacao2{
+		top: 200%;
+	}
+
+
 }
 
 @media screen and (max-width: 320px) {
@@ -351,6 +360,6 @@
 	}
 
 	.continuacao2{
-		top: 215%;
+		top: 200%;
 	}
 }

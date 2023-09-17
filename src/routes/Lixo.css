@@ -32,8 +32,11 @@
     color: var(--cor-titulo);
 }
 
-.txtPadr {
+.txtLixo {
     margin-top: -10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
     display: inline-block;
     color: var(--cor-texto);
     font-size: 22px;
