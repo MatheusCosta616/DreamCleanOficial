@@ -10,7 +10,7 @@ export default function Cadastro() {
     e.preventDefault();
     enviarFormulario();
     validarSenha();
-  }
+  };
 
   return (
     <div id="cadastro" className="cadastro">
