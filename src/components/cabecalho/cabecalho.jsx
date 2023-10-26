@@ -1,8 +1,8 @@
 import './cabecalho.css'
 import React from 'react';
-import logoImage from '../img/logo.png'
+import logoImage from '../../img/logo.png'
 import { Link } from "react-router-dom"
-import {menu} from "../js/menu"
+import {menu} from "../../js/menu"
 
 export default function Cabecalho(){
     const handleClick = () => {
@@ -12,6 +12,7 @@ export default function Cabecalho(){
     return(
     <>
     <div id="menu" className="menu">
+        <img id="logoImage" src={logoImage}></img>
         <ul className="itens">
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/QmSomos'>Quem Somos</Link></li>

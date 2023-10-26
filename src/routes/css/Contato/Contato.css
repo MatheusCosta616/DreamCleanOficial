@@ -1,0 +1,85 @@
+:root {
+  --cor-background: #256670;
+  --cor-texto: #FFF;
+  --cor-titulo: #ADE28A;
+  --espacamento-vertical: 10%;
+  --espacamento-horizontal: 30%;
+  --espacamento-bot: -5%;
+}
+
+.container-contato {
+  margin-top: var(--espacamento-vertical);
+  margin-left: var(--espacamento-horizontal);
+  margin-bottom: var(--espacamento-bot);
+  color: var(--cor-texto);
+  background-color: var(--cor-background);
+  border-radius: 20px;
+  padding: 20px;
+  width: 40vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titulo-contato {
+  color: var(--cor-titulo);
+  text-align: center;
+}
+
+#mensagem {
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--cor-texto);
+  width: 20vw;
+}
+
+#btnEnviar {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .container-contato {
+    margin-top: 22%;
+    height: 45vh;
+    width: 55vw;
+    margin-left: 25%;
+  }
+  #nome, #email, #mensagem {
+    width: 35vw;
+  }
+  #btnEnviar {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-contato {
+    margin-top: 90%;
+    width: 100vw;
+    height: 50vh;
+    margin-left: 20%;
+    margin-bottom: -120%;
+  }
+  #nome, #email, #mensagem {
+    width: 65vw;
+  }
+  #btnEnviar {
+    width: 30vw;
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-contato {
+    width: 120vw;
+    margin-left: 15%;
+    margin-bottom: -180%;
+  }
+  #nome, #email, #mensagem {
+    width: 80vw;
+  }
+  #btnEnviar {
+    width: 40vw;
+  }
+}/*# sourceMappingURL=Contato.css.map */

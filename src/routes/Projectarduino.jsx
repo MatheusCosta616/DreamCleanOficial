@@ -1,7 +1,7 @@
-import Cabecalho from '../components/cabecalho'
-import './Projectarduino.css'
+import Cabecalho from '../components/cabecalho/cabecalho'
+import './css/Projectarduino/Projectarduino.css'
 import ContainerHome from '../components/componentesPesonalizados/homeContainer'
-import Rodape from '../components/rodape'
+import Rodape from '../components/rodape/rodape'
 import projeto from '../img/projeto.png'
 
 

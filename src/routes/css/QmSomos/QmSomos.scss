@@ -127,6 +127,7 @@
   
   /* Estilizando divisão de informações (divisaoInfo) */
   .divisaoInfo {
+	margin-top: 10vh;
 	grid-column: 1/3;
 	grid-row: 2;
 	position: absolute;
@@ -168,7 +169,7 @@
   /* Estilizando a continuação */
   .continuacao {
 	margin-top: var(--margin-top);
-	margin-bottom: 30%;
+	margin-bottom: -10vh;
 	grid-column: 1/3;
 	grid-row: 3;
 	width: 60%;

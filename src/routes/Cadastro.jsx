@@ -1,4 +1,4 @@
-import './Cadastro.css';
+import './css/Cadastro/Cadastro.css';
 import React from 'react';
 import { Link } from "react-router-dom";
 import { enviarFormulario, validarSenha } from '../js/validacao';

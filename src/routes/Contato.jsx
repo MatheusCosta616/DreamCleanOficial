@@ -1,4 +1,4 @@
-import './Contato.css'
+import './css/Contato/Contato.css'
 import React from 'react';
 
 export default function Contato(){

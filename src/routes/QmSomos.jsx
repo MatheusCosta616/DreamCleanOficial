@@ -1,7 +1,7 @@
-import Cabecalho from "../components/cabecalho";
-import Rodape from "../components/rodape";
+import Cabecalho from "../components/cabecalho/cabecalho";
+import Rodape from "../components/rodape/rodape";
 import logoImage from '../img/logo.png'
-import '../routes/QmSomos.css'
+import './css/QmSomos/QmSomos.css'
 import Alagamento from '../img/alagamento.png'
 import Alagamento2 from '../img/alagamento2.jpg'
 import Alagamento3 from '../img/alagamento3.jpg'

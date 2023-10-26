@@ -1,7 +1,7 @@
-import Cabecalho from '../components/cabecalho'
-import './Monitoramento.css'
+import Cabecalho from '../components/cabecalho/cabecalho'
+import './css/Monitoramento/Monitoramento.css'
 import ContainerHome from '../components/componentesPesonalizados/homeContainer'
-import Rodape from '../components/rodape'
+import Rodape from '../components/rodape/rodape'
 import mapa1 from '../img/mapa1.png'
 import mapa2 from '../img/mapa2.png'
 

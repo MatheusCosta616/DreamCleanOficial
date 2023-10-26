@@ -1,4 +1,4 @@
-import './Lixo.css'
+import './css/Lixo/Lixo.css'
 import bueiro from '../img/bueirolixo.jpg'
 
 export default function Lixo() {

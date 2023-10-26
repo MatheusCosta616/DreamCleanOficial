@@ -1,7 +1,7 @@
 import React from 'react'
-import './404Error.css'
-import Cabecalho from '../components/cabecalho'
-import Rodape from '../components/rodape'
+import './css/404Error/404Error.css'
+import Cabecalho from '../components/cabecalho/cabecalho'
+import Rodape from '../components/rodape/rodape'
 
 export default function Erro404() {
   return (
