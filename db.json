@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Claudio",
+      "email": "claudiogames@gmail.com",
+      "senha": "1234",
+      "dataHoraCadastro": "13/09/2023, 19:31:27"
+    },
+    {
+      "id": 2,
+      "nome": "Roberto",
+      "email": "robertitojoga@gmail.com",
+      "senha": "1234",
+      "dataHoraCadastro": "12/10/2023, 23:43:21"
+    },
+    {
+      "id": 3,
+      "nome": "Matheus",
+      "email": "matheusgames@gmail.com",
+      "senha": "1234",
+      "dataHoraCadastro": "12/10/2023, 23:43:21"
+    }
+  ]
+}

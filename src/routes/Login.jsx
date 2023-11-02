@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Login/Login.css';
 import { Link } from 'react-router-dom';
-import { realizarLogin } from '../js/login';
+import { realizarLogin } from '../jsx/login.jsx';
 
 export default function Login() {
 
