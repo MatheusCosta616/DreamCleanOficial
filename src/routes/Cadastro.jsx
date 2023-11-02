@@ -25,49 +25,49 @@ export default function Cadastro() {
     e.preventDefault();
     enviarFormulario();
     validarSenha();
-  };
+  
 
-  const cadastrarUsuario = () => {
-    fetch('http://localhost:5000/usuarios')
-      .then((response) => response.json())
-      .then((data) => {
-        const existingIds = data.map((usuario) => usuario.id);
-        const maxId = existingIds.length > 0 ? Math.max(...existingIds) : 0;
-        const id = maxId + 1;
+    const cadastrarUsuario = () => {
+      fetch('http://localhost:5000/usuarios')
+        .then((response) => response.json())
+        .then((data) => {
+          const existingIds = data.map((usuario) => usuario.id);
+          const maxId = existingIds.length > 0 ? Math.max(...existingIds) : 0;
+          const id = maxId + 1;
 
-        const post_data = {
-          id,
-          nome: usuarios.nome,
-          email: usuarios.email,
-          senha: usuarios.senha,
-          dataHoraCadastro: usuarios.dataHoraCadastro,
-        };
+          const post_data = {
+            id,
+            nome: usuarios.nome,
+            email: usuarios.email,
+            senha: usuarios.senha,
+            dataHoraCadastro: usuarios.dataHoraCadastro
+          };
 
-        fetch('http://localhost:5000/usuarios', {
-          method: 'POST',
-          body: JSON.stringify(post_data),
-          headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
-          },
+          fetch('http://localhost:5000/usuarios', {
+            method: 'POST',
+            body: JSON.stringify(post_data),
+            headers: {
+              'Content-Type': 'application/json; charset=UTF-8',
+            },
+          })
+            .then((response) => {
+              console.log("STATUS DA REQUISIÇÃO: " + response.status);
+              if (response.status === 201) {
+                alert("Usuário cadastrado com sucesso!");
+                // Redirecionar para outra página após o cadastro bem-sucedido
+                navigate('/usuarios');
+              } else {
+                alert("Erro ao adicionar o usuário");
+              }
+            })
+            .then((data) => {
+              console.log(data);
+            })
+            .catch((error) => console.error(error));
         })
-          .then((response) => {
-            console.log("STATUS DA REQUISIÇÃO: " + response.status);
-            if (response.status === 201) {
-              alert("Usuário cadastrado com sucesso!");
-              // Redirecionar para outra página após o cadastro bem-sucedido
-              navigate('/usuarios');
-            } else {
-              alert("Erro ao adicionar o usuário");
-            }
-          })
-          .then((data) => {
-            console.log(data);
-          })
-          .catch((error) => console.error(error));
-      })
-      .catch((error) => console.error(error));
+        .catch((error) => console.error(error));
+    };
   };
-
   return (
     <div id="cadastro" className="cadastro">
       <form id="formCadast" className="formCadast" onSubmit={handleSubmit}>
