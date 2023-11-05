@@ -89,11 +89,11 @@ export function enviarFormulario() {
   
       localStorage.setItem('usuarios', JSON.stringify(usuarios));
   
-      alert('Cadastro realizado com sucesso!');
       document.querySelector('form').reset();
     } else {
       alert('Por favor, preencha todos os campos corretamente.');
       limparValidacao();
+      return false;
     }
   }
 

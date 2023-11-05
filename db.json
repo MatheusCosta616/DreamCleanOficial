@@ -20,6 +20,38 @@
       "email": "matheusgames@gmail.com",
       "senha": "1234",
       "dataHoraCadastro": "12/10/2023, 23:43:21"
+    },
+    {
+      "nome": "Lukmat",
+      "email": "lukmatgames@gmail.com",
+      "senha": "123",
+      "dataHoraCadastro": "2023-11-06",
+      "gender": "male",
+      "id": 4
+    },
+    {
+      "nome": "",
+      "email": "",
+      "senha": "",
+      "dataHoraCadastro": "",
+      "gender": "",
+      "id": 5
+    },
+    {
+      "nome": "lukmatson",
+      "email": "lukjoga@gmail.com",
+      "senha": "123",
+      "dataHoraCadastro": "2023-11-14",
+      "gender": "female",
+      "id": 6
+    },
+    {
+      "nome": "dsadad",
+      "email": "dadsd@dsadas",
+      "senha": "123",
+      "dataHoraCadastro": "2023-12-06",
+      "gender": "male",
+      "id": 7
     }
   ]
 }
