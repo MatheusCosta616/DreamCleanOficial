@@ -32,7 +32,7 @@ const recarga = ()=>{
       <h1>Lista de Produtos</h1>
 
       <ModalAction open={open} setClose={setOpen} reacarga={recarga}/>
-
+    {/ Muda esse ngc de open modal pra o que ele for ser usado/}
       <button onClick={()=> setOpen(true)}>OPEN-MODAL</button>
 
       <div>

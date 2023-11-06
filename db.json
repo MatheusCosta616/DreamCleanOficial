@@ -52,6 +52,14 @@
       "dataHoraCadastro": "2023-12-06",
       "gender": "male",
       "id": 7
+    },
+    {
+      "nome": "Pedro Zilves",
+      "email": "zedrogameplays@gmail.com",
+      "senha": "123",
+      "dataHoraCadastro": "2004-04-09",
+      "gender": "male",
+      "id": 8
     }
   ]
 }

@@ -29,11 +29,11 @@ export default function excluirUsuarios() {
       .then((response) => {
         console.log("STATUS DA REQUISIÇÃO: " + response.status);
         if (response.status === 200) {
-          alert("Produto excluído com sucesso");
+          alert("Usuário excluído com sucesso");
           // Redirect
           navigate("/produtos");
         } else {
-          alert("Erro ao excluir o produto");
+          alert("Erro ao excluir o usuário");
         }
       })
       .catch(error => console.log(error))
@@ -42,14 +42,14 @@ export default function excluirUsuarios() {
     const handleSubmit2 = (e) => {
       e.preventDefault()
 
-      alert("Produto não excluído")
-      navigate("/produtos")
+      alert("usuário não excluído")
+      navigate("/home")
     }
 
   return (
     <div className='container'>
       <h1>Excluir Produto</h1>
-      <h2>Deseja excluir o produto?</h2>
+      <h2>Deseja excluir o usuário?</h2>
       <button className='sim' onClick={handleSubmit}>Sim</button>
       <button className='nao' onClick={handleSubmit2}>Não</button>
     </div>
