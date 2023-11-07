@@ -1,8 +1,9 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react'
+import '../routes/css/Excluir/Excluir.scss'
 
 
-export default function excluirUsuarios() {
+export default function ExcluirUsuarios() {
 
     //Recuperando o parâmetro ID com o HOOK useParams();
 
@@ -31,7 +32,7 @@ export default function excluirUsuarios() {
         if (response.status === 200) {
           alert("Usuário excluído com sucesso");
           // Redirect
-          navigate("/produtos");
+          navigate("/Adm");
         } else {
           alert("Erro ao excluir o usuário");
         }
@@ -43,12 +44,12 @@ export default function excluirUsuarios() {
       e.preventDefault()
 
       alert("usuário não excluído")
-      navigate("/home")
+      navigate("/Adm")
     }
 
   return (
     <div className='container'>
-      <h1>Excluir Produto</h1>
+      <h1>Excluir Usuário</h1>
       <h2>Deseja excluir o usuário?</h2>
       <button className='sim' onClick={handleSubmit}>Sim</button>
       <button className='nao' onClick={handleSubmit2}>Não</button>

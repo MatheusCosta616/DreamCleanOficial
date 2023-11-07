@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 export function realizarLogin() {
+    const navigate = useNavigate()
     const nomeInput = document.getElementById('usuario');
     const senhaInput = document.getElementById('senha');
   
@@ -8,7 +11,8 @@ export function realizarLogin() {
     if (nome === 'admin' && senha === '123456') {
       alert('Login realizado com sucesso!');
       document.getElementById('formLogin').reset();
-      return;
+      navigate("/Adm")
+      return
     }
   
     const usuariosArmazenados = localStorage.getItem('usuarios');

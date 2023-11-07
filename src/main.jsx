@@ -14,7 +14,8 @@ import Cadastro from './routes/Cadastro.jsx';
 import Projectarduino from './routes/Projectarduino.jsx';
 import Contato from './routes/Contato.jsx';
 import Lixo from './routes/Lixo.jsx';
-import Administrador from './routes/Administrador.jsx';
+import Adm from './routes/Administrador.jsx';
+import ExcluirUsuarios from './routes/Excluir.jsx';
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>, errorElement: <Erro404/>,
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
       { path:"Projectarduino", element:<Projectarduino/>},
       { path:"Contato", element: <Contato/> },
       { path:"Lixo", element:<Lixo/>},
-      { path:"Adm", element:<Administrador/>},
+      { path:"Adm", element:<Adm/>},
+      { path:"/excluir/usuarios/:id", element:<ExcluirUsuarios/>},
     ]    
   }
 ]);

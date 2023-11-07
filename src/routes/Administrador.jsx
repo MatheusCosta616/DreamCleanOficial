@@ -2,22 +2,13 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {AiFillEdit as Editar} from "react-icons/ai"
 import {AiFillDelete as Excluir} from "react-icons/ai"
-import ModalAction from "../components/ModalAction/ModalAction";
+import '../routes/css/Administrador/Administrador.scss'
 
 export default function Adm() {
   document.title = "Lista de Usuários";
 
   const [ListaUsuariosLocal, setListaUsuariosLocal] = useState([{}]);
-const recarga = ()=>{
-  fetch("http://localhost:5000/usuarios")
-  .then((response)=> response.json())
-  .then((response)=> setListaUsuariosLocal(response))
-  .catch(error =>console.log(error))
-
-}
-  
-
-  
+   
   useEffect(() => {
     fetch("http://localhost:5000/usuarios") 
     .then((response)=> response.json()) 
@@ -25,15 +16,10 @@ const recarga = ()=>{
     .catch(error =>console.log(error))
   }, []);
 
-  const [open, setOpen] = useState(false);
 
   return (
-    <div>
-      <h1>Lista de Produtos</h1>
-
-      <ModalAction open={open} setClose={setOpen} reacarga={recarga}/>
-    {/ Muda esse ngc de open modal pra o que ele for ser usado/}
-      <button onClick={()=> setOpen(true)}>OPEN-MODAL</button>
+    <div className="adm">
+      <h1>Lista de Usuários</h1>
 
       <div>
         <table className="tblEstilo">
@@ -41,28 +27,27 @@ const recarga = ()=>{
             <tr>
               <th>ID</th>
               <th>NOME</th>
-              <th>DESCRIÇÃO</th>
-              <th>PREÇO</th>
-              <th>EDITAR / EXCLUIR</th>
+              <th>EMAIL</th>
+              <th>DATA/HORA CADASTRO</th>
+              <th>EXCLUIR</th>
             </tr>
           </thead>
           <tbody>
-            {setListaUsuariosLocal.map((item, indice) => (
+            {ListaUsuariosLocal.map((item, indice) => (
               <tr key={indice}>
                 <td>{item.id}</td>
                 <td>{item.nome}</td>
-                <td>{item.desc}</td>
-                <td>{item.preco}</td>
+                <td>{item.email}</td>
+                <td>{item.dataHoraCadastro}</td>
                 <td>
-                  <Link to={`/editar/produtos/${item.id}`}><Editar/> </Link> |
-                  <Link to={`/excluir/produtos/${item.id}`}> <Excluir/></Link>
+                  <Link to={`/excluir/usuarios/${item.id}`}> <Excluir/></Link>
                 </td>
               </tr>
             ))}
           </tbody>
           <tfoot>
             <tr>
-              <td colSpan={5}>PRODUTOS INFORMÁTICOS - QTD = {listaProdutosLocal.length}</td>
+              <td colSpan={5}>USUÁRIOS CADASTRADOS - QTD = {ListaUsuariosLocal.length}</td>
             </tr>
           </tfoot>
         </table>
