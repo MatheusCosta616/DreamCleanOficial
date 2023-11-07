@@ -11,8 +11,7 @@ export function realizarLogin() {
     if (nome === 'admin' && senha === '123456') {
       alert('Login realizado com sucesso!');
       document.getElementById('formLogin').reset();
-      navigate("/Adm")
-      return
+      return;
     }
   
     const usuariosArmazenados = localStorage.getItem('usuarios');

@@ -1,31 +1,10 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Claudio",
-      "email": "claudiogames@gmail.com",
-      "senha": "1234",
-      "dataHoraCadastro": "13/09/2023, 19:31:27"
-    },
-    {
-      "id": 2,
-      "nome": "Roberto",
-      "email": "robertitojoga@gmail.com",
-      "senha": "1234",
-      "dataHoraCadastro": "12/10/2023, 23:43:21"
-    },
-    {
-      "id": 3,
-      "nome": "Matheus",
-      "email": "matheusgames@gmail.com",
-      "senha": "1234",
-      "dataHoraCadastro": "12/10/2023, 23:43:21"
-    },
-    {
       "nome": "Lukmat",
       "email": "lukmatgames@gmail.com",
       "senha": "123",
-      "dataHoraCadastro": "2023-11-06",
+      "dataNasc": "2023-11-06",
       "gender": "male",
       "id": 4
     },
@@ -33,9 +12,25 @@
       "nome": "lukmatson",
       "email": "lukjoga@gmail.com",
       "senha": "123",
-      "dataHoraCadastro": "2023-11-14",
+      "dataNasc": "2023-11-14",
       "gender": "female",
       "id": 6
+    },
+    {
+      "nome": "rod",
+      "email": "rod@email.com",
+      "senha": "123456",
+      "dataNasc": "2023-11-01",
+      "gender": "male",
+      "id": 7
+    },
+    {
+      "nome": "Roberto",
+      "email": "robertin@email.com",
+      "senha": "123",
+      "dataNasc": "2004-03-10",
+      "gender": "female",
+      "id": 8
     }
   ]
 }

@@ -10,7 +10,7 @@ export default function Cadastro() {
     email: '',
     senha: '',
     confirmarSenha: '',
-    dataHoraCadastro: '',
+    dataNasc: '',
     gender: '',
   });
 
@@ -44,7 +44,7 @@ export default function Cadastro() {
       nome: usuarios.nome,
       email: usuarios.email,
       senha: usuarios.senha,
-      dataHoraCadastro: usuarios.dataHoraCadastro,
+      dataNasc: usuarios.dataNasc,
       gender: usuarios.gender,
     };
 
