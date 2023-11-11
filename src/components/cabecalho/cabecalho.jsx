@@ -2,7 +2,7 @@ import './cabecalho.css'
 import React from 'react';
 import logoImage from '../../img/logo.png'
 import { Link } from "react-router-dom"
-import {menu} from "../../jsx/menu.jsx"
+import {menu} from "../../jsx/Menu.jsx"
 
 export default function Cabecalho(){
     const handleClick = () => {

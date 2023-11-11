@@ -1,7 +1,7 @@
 import './css/Cadastro/Cadastro.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { enviarFormulario, validarSenha } from '../jsx/validacao.jsx';
+import { enviarFormulario, validarSenha } from '../jsx/Validacao.jsx';
 import { useNavigate } from 'react-router-dom';
 
 export default function Cadastro() {

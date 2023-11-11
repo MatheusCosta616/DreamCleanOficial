@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Cabecalho from "./components/cabecalho/cabecalho.jsx";
-import Rodape from "./components/rodape/rodape.jsx";
+import Cabecalho from "./components/cabecalho/Cabecalho.jsx";
+import Rodape from "./components/rodape/Rodape.jsx";
 import "./AppCss/App.css";
 
 export default function App() {
