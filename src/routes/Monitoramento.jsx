@@ -78,7 +78,7 @@ export default function Monitoramento() {
           </form>
           {distanceData && (
             <p id="distanciaRetorno">
-              Distância: {distanceData} Centimetros {distanceData.unidade}
+              Distância: {distanceData} Cm {distanceData.unidade}
             </p>
           )}
           <p id="pesoRetorno">Peso: {weightData && <span>{weightData}</span>} KG</p>
