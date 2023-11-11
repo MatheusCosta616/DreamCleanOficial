@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.adm {
+  margin-top: 20%;
+}
+.adm h1 {
+  text-align: center;
+}
+
+.tblEstilo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+.tblEstilo thead tr th {
+  background-color: rgb(88, 88, 88);
+  color: white;
+}
+.tblEstilo th, .tblEstilo td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.tblEstilo th {
+  background-color: #f2f2f2;
+}
+.tblEstilo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tblEstilo tr:nth-child(odd) {
+  background-color: #fff;
+}
+.tblEstilo tbody tr td:nth-child(5) {
+  font-size: 22px;
+}
+.tblEstilo tfoot {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.tblEstilo a {
+  text-decoration: none;
+  color: #007bff;
+}
+@media screen and (max-width: 600px) {
+  .tblEstilo {
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal */
+    display: block;
+  }
+  .tblEstilo th, .tblEstilo td {
+    display: block;
+    width: 100%;
+  }
+  .tblEstilo tbody tr td {
+    text-align: left; /* Ajuste conforme necessário */
+  }
+}/*# sourceMappingURL=Administrador.css.map */

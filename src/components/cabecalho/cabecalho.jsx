@@ -16,7 +16,7 @@ export default function Cabecalho(){
         <ul className="itens">
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/QmSomos'>Quem Somos</Link></li>
-            <li><Link to='/Monitoramento'>Monitoramento de área</Link></li>
+            <li><Link to='/Monitoramento'>Monitoramento de bueiro</Link></li>
             <li><Link to='/Projectarduino'>Projeto</Link></li>
             <li><Link to='/Lixo'>Como o lixo é descartado</Link></li>  
             <li><Link to='/Contato'>Contato</Link></li>
