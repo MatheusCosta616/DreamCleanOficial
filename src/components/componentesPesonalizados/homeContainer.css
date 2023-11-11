@@ -11,8 +11,7 @@
   width: 80%;
   height: 80%;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center;}
 
 .containerMain img {
   display: block;
@@ -65,7 +64,7 @@ img {
   position: under;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
   .containerMain {
     margin-top: 140px;
   }

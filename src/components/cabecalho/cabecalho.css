@@ -17,10 +17,10 @@
 
 #logoImage {
   margin-left: 2vi;
-  margin-top: -8vh;
+  margin-top: -2vh;
   z-index: 0;
-  width: 15vw;
-  height: 30vh;
+  width: 7vw;
+  height: 14vh;
 }
 
 .bar {
@@ -47,7 +47,7 @@
   z-index: 1;
   list-style: none;
   display: flex;
-  margin-top: -22vh;
+  margin-top: -12vh;
 }
 
 /* Estilizando a lista não ordenada (ul) */
@@ -106,7 +106,7 @@ a:visited {
     cursor: pointer;
     margin-left: 84%;
     align-items: center;
-    margin-top: 25px;
+    margin-top: -9vh;
   }
   .itens {
     display: none;
@@ -129,19 +129,57 @@ a:visited {
   .itens.active {
     display: flex;
   }
+
+  #logoImage {
+    width: 20vw;
+    height: 14vh;
+  }
 }
+
+@media screen and (max-width: 1024px) {
+  #logoImage {
+    width: 12vw;
+    height: 16vh;
+  }
+
+  .itens{
+    margin-top: -14vh;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .itens{
+      margin-top: 4.5vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .menu {
     width: 117%;
+  }
+  #logoImage {
+    width: 45vw;
+    height: 16vh;
+  }
+  .menu-btn{
+    margin-top: -10vh;
   }
 }
 @media screen and (max-width: 375px) {
   .menu {
     width: 118%;
   }
+  #logoImage {
+    width: 45vw;
+    height: 14vh;
+  }
 }
 @media screen and (max-width: 320px) {
   .menu {
     width: 122%;
+  }
+  #logoImage {
+    width: 40vw;
+    height: 14vh;
   }
 }/*# sourceMappingURL=cabecalho.css.map */

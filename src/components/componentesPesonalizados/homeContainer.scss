@@ -33,7 +33,7 @@
     height: 400px;
     background-color: #256670;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: 20vh;
 }
 
 
@@ -63,9 +63,9 @@
     position: under;
   }
   
-  @media screen and (max-width:1024px){
+  @media screen and (max-width:1240px){
     .containerMain{
-      margin-top: 140px;
+      margin-top: 110px;
     }
   }
 

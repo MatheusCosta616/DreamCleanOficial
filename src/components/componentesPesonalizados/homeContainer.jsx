@@ -1,5 +1,5 @@
 import imgLogo from '../../img/logo.png'
-import './homeContainer.css'
+import './homeContainer.scss'
 
 export default function ContainerHome(){
     return (
