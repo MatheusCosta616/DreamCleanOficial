@@ -31,6 +31,14 @@
       "dataNasc": "",
       "gender": "male",
       "id": 9
+    },
+    {
+      "nome": "Zedro",
+      "email": "zedropilves@gmail.com",
+      "senha": "123",
+      "dataNasc": "",
+      "gender": "other",
+      "id": 10
     }
   ]
 }
