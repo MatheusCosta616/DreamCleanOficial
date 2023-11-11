@@ -1,39 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './css/Login/Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Login() {
-
   const navigate = useNavigate();
+  const [usuarios, setUsuarios] = useState([]);
+
+  useEffect(() => {
+    const carregarUsuarios = async () => {
+      try {
+        const resposta = await fetch('http://localhost:5000/usuarios');
+        if (!resposta.ok) {
+          throw new Error(`Erro: ${resposta.status}`);
+        }
+        const dados = await resposta.json();
+        setUsuarios(dados);
+      } catch (erro) {
+        console.error(erro);
+      }
+    };
+
+    carregarUsuarios();
+  }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    
+    e.preventDefault();
+
     const nomeInput = document.getElementById('usuario');
     const senhaInput = document.getElementById('senha');
-  
+
     const nome = nomeInput.value.trim().toLowerCase();
     const senha = senhaInput.value;
-  
+
+    // Verifica se é o admin
     if (nome === 'admin' && senha === '123456') {
-      alert('Login realizado com sucesso!');
+      alert('Login realizado com sucesso como admin!');
       e.target.reset();
       navigate("/Adm");
       return;
     }
-  
-    const usuariosArmazenados = localStorage.getItem('usuarios');
-    if (usuariosArmazenados === null) {
-      alert('Usuário não encontrado. Por favor, faça o cadastro primeiro.');
-      return;
-    }
-  
-    const usuarios = JSON.parse(usuariosArmazenados);
+
+ 
     const usuario = usuarios.find(user => user.nome.toLowerCase() === nome && user.senha === senha);
-  
+
     if (usuario) {
       alert('Login realizado com sucesso!');
+      sessionStorage.setItem(nomeInput.value, senhaInput.value);
       e.target.reset();
+      navigate("/Monitoramento");
+      return;
     } else {
       alert('Nome de usuário ou senha incorretos. Por favor, tente novamente.');
     }

@@ -122,7 +122,7 @@ export default function Cadastro() {
           <option value="">Selecione</option>
           <option value="male">Masculino</option>
           <option value="female">Feminino</option>
-          <option value="other"></option>
+          <option value="other">Outro</option>
         </select><br /><br />
         <input id="cadastrar" type="submit" value="Cadastrar" />
         <p id="jaTem">Já possui uma conta? <Link id="links" to="/Login">CLIQUE AQUI</Link></p>
