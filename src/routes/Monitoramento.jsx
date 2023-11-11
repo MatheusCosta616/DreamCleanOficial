@@ -78,10 +78,10 @@ export default function Monitoramento() {
           </form>
           {distanceData && (
             <p id="distanciaRetorno">
-              Distância: {distanceData} cm {distanceData.unidade}
+              Distância: {distanceData} Centimetros {distanceData.unidade}
             </p>
           )}
-          <p id="pesoRetorno">Peso: {weightData && <span>{weightData}</span>}</p>
+          <p id="pesoRetorno">Peso: {weightData && <span>{weightData}</span>} KG</p>
           {/* <p id="pontos">Pontos de atenção de chuva forte:</p>
           <img className="image-monitor" id="img-mapa1" src={mapa1} alt="mapa1" /> */}
         </div>
