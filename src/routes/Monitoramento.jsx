@@ -71,7 +71,7 @@ export default function Monitoramento() {
   return (
     <>
       <div className="container-monitor">
-        <h1 id="monitoramento-titulo">Monitoramento de Bueiro:</h1>
+        <h1 id="monitoramento-titulo">Monitoramento do Bueiro:</h1>
         <div className='container-imagens'>
           <form onSubmit={handleSubmit}>
             <input id="btnMonitorar" type="submit" value="Monitorar" />

@@ -20,7 +20,7 @@
   margin-top: -2vh;
   z-index: 0;
   width: 7vw;
-  height: 14vh;
+  height: 15vh;
 }
 
 .bar {
@@ -47,7 +47,7 @@
   z-index: 1;
   list-style: none;
   display: flex;
-  margin-top: -12vh;
+  margin-top: -13vh;
 }
 
 /* Estilizando a lista não ordenada (ul) */
@@ -154,6 +154,9 @@ a:visited {
   .menu-btn{
     margin-top: -10vh;
   }
+  #logoImage {
+    width: 15vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -161,8 +164,8 @@ a:visited {
     width: 117%;
   }
   #logoImage {
-    width: 45vw;
-    height: 16vh;
+    width: 37vw;
+    height: 15vh;
   }
   .menu-btn{
     margin-top: -10vh;
@@ -172,17 +175,9 @@ a:visited {
   .menu {
     width: 118%;
   }
-  #logoImage {
-    width: 45vw;
-    height: 14vh;
-  }
 }
 @media screen and (max-width: 320px) {
   .menu {
     width: 122%;
-  }
-  #logoImage {
-    width: 40vw;
-    height: 14vh;
   }
 }/*# sourceMappingURL=cabecalho.css.map */

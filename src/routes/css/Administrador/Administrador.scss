@@ -57,12 +57,25 @@
     color: #007bff;
   }
 
-  @media screen and (max-width: 600px) {
+  
+}
+@media screen and (max-width: 600px) {
+    
+  .tblEstilo{
     overflow-x: auto; /* Adiciona barra de rolagem horizontal */
-    display: block;
+    margin-left: 20%;
+  }
 
+  .adm{
+    h1{
+      margin-top: 40%;
+      margin-bottom: 25%;
+      margin-left: 35%;
+    }
+  }
     th, td {
       display: block;
+      align-items: center;
       width: 100%;
     }
 
@@ -74,4 +87,3 @@
       }
     }
   }
-}
