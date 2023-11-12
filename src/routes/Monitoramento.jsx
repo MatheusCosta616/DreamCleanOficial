@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './css/Monitoramento/Monitoramento.css';
-import mapa1 from '../img/mapa1.png';
 //Revisao final para entrega
 export default function Monitoramento() {
   const [distanceData, setDistanceData] = useState(null);
