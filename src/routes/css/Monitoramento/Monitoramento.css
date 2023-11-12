@@ -63,21 +63,6 @@ h1, p {
   font-weight: bold;
 }
 
-#pontos {
-  margin-bottom: 0%;
-  margin-left: -42vw;
-  margin-top: 10%;
-}
-
-#img-mapa1 {
-  grid-row: 1;
-  grid-column: 1/1;
-  width: 50vw;
-  height: 80vh;
-  margin-top: 10%;
-  margin-left: 5%;
-}
-
 #btnMonitorar {
   height: 10vh;
   margin-top: 4vh;
@@ -88,10 +73,11 @@ h1, p {
 #distanciaRetorno {
   color: white;
   font-family: "Roboto", sans-serif;
+  text-align: center;
   font-size: 42px;
   margin-top: 20vh;
   margin-left: -20vw;
-  margin-right: -5vw;
+  margin-right: 0vw;
   z-index: 0;
 }
 
@@ -99,100 +85,115 @@ h1, p {
   color: white;
   font-size: 42px;
   font-family: "Roboto", sans-serif;
-  margin-top: 30vh;
+  margin-top: 5vh;
   margin-left: -20vw;
-  margin-right: -5vw;
+  margin-right: 0vw;
   z-index: 1;
 }
 
+.retorno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+  #pesoRetorno, #distanciaRetorno {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  #pesoRetorno, #distanciaRetorno {
+    font-size: 28px;
+  }
+
+  .retorno{
+    margin-top: 4vh
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
   .container-imagens {
-    width: 150%;
-    height: 95vh;
-    left: -30%;
-    top: 5%;
+    top: 15%;
     margin-bottom: 20%;
   }
-  #img-mapa1 {
+
+  #monitoramento-titulo {
+    display: flex;
     margin-top: 10%;
-    margin-left: 4%;
-    width: 80vh;
+    margin-left: 85%;
+    font-size: 30px;
   }
-  #pontos {
-    margin-left: -58vw;
+
+  #btnMonitorar {
+    width: 170px;
+    margin-left: 12vw;
+  }
+
+  #pesoRetorno, #distanciaRetorno {
+    margin-left: -22vw;
   }
 }
 @media screen and (max-width: 768px) {
   .container-imagens {
-    width: 200%;
-    left: -62%;
-  }
-  #img-mapa1 {
-    margin-top: 12%;
-    margin-left: 3%;
-  }
-  #pontos {
-    margin-top: 3vh;
-    margin-left: -78vw;
+    width: 120%;
+    left: -20%;
+    top: 25%;
   }
   #monitoramento-titulo {
-    margin-top: 10%;
     font-size: 30px;
+    margin-top: 22%;
+    margin-left: 75%;
+  }
+  #btnMonitorar {
+    margin-left: 17vw;
+  }
+  #pesoRetorno, #distanciaRetorno {
+    margin-left: -29vw;
   }
 }
 @media screen and (max-width: 425px) {
   .container-imagens {
     width: 350%;
     left: -110%;
-    top: 20%;
-  }
-  #img-mapa1 {
-    margin-top: 90%;
-    margin-left: 4%;
-    width: 290%;
-    height: 75%;
-  }
-  #pontos {
-    margin-top: 3vh;
-    margin-left: -5vw;
-    text-align: center;
+    top: 50%;
   }
   #monitoramento-titulo {
-    margin-top: 30%;
+    margin-top: 50%;
     font-size: 30px;
+  }
+  #btnMonitorar {
+    margin-left: 42vw;
+  }
+  #pesoRetorno, #distanciaRetorno {
+    margin-left: -59vw;
   }
 }
 @media screen and (max-width: 375px) {
   .container-imagens {
     width: 500%;
     left: -205%;
-    top: 20%;
+    top: 70%;
   }
-  #img-mapa1 {
-    margin-top: 110%;
-    margin-left: 4%;
-    width: 290%;
-    height: 75%;
-  }
-  #pontos {
-    margin-top: 4vh;
-    margin-left: -10vw;
+  #monitoramento-titulo {
+    margin-top: 70%;
+    margin-left: 60%;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 320px) {
   .container-imagens {
     width: 1000%;
     left: -495%;
-    top: 20%;
+    top: 70%;
   }
-  #img-mapa1 {
-    margin-top: 130%;
-    margin-left: 4%;
-    width: 290%;
-    height: 75%;
+  #monitoramento-titulo {
+    margin-left: 55%;
   }
-  #pontos {
-    margin-top: 4vh;
-    margin-left: -6vw;
+  #pesoRetorno, #distanciaRetorno {
+    margin-left: -70vw;
   }
+
 }/*# sourceMappingURL=Monitoramento.css.map */

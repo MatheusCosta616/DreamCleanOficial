@@ -11,8 +11,7 @@
   width: 80%;
   height: 80%;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center;}
 
 .containerMain img {
   display: block;
@@ -35,7 +34,7 @@
   height: 400px;
   background-color: #256670;
   border-radius: 20px;
-  margin-top: 20vh;
+  margin-top: 80px;
 }
 
 #TituloHome {
@@ -67,7 +66,7 @@ img {
 
 @media screen and (max-width: 1240px) {
   .containerMain {
-    margin-top: 110px;
+    margin-top: 140px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -76,12 +76,17 @@ export default function Monitoramento() {
           <form onSubmit={handleSubmit}>
             <input id="btnMonitorar" type="submit" value="Monitorar" />
           </form>
-          {distanceData && (
-            <p id="distanciaRetorno">
-              Distância: {distanceData} Cm {distanceData.unidade}
-            </p>
-          )}
-          <p id="pesoRetorno">Peso: {weightData && <span>{weightData}</span>} KG</p>
+
+          <div className='retorno'>
+            {distanceData && (
+              <p id="distanciaRetorno">
+                Distância: {distanceData} Cm {distanceData.unidade}
+              </p>
+            )}
+              <p id="pesoRetorno">
+                Peso: {weightData && <span>{weightData}</span>} KG
+              </p>
+            </div>
           {/* <p id="pontos">Pontos de atenção de chuva forte:</p>
           <img className="image-monitor" id="img-mapa1" src={mapa1} alt="mapa1" /> */}
         </div>

@@ -43,7 +43,7 @@
 @media screen and (max-width: 768px) {
   .container-contato {
     margin-top: 22%;
-    height: 45vh;
+    height: 48vh;
     width: 55vw;
     margin-left: 25%;
   }
@@ -66,8 +66,8 @@
     width: 65vw;
   }
   #btnEnviar {
-    width: 30vw;
-    margin-left: 22%;
+    width: 32vw;
+    margin-left: 23%;
   }
 }
 @media screen and (max-width: 320px) {
